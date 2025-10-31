@@ -81,7 +81,7 @@ export const RSIChart = forwardRef<RSIChartHandle, RSIChartProps>(({ data, onTim
       title: "30",
     })
 
-    chart.priceScale().applyOptions({
+    chart.priceScale("right").applyOptions({
       autoScale: false,
       scaleMargins: { top: 0.1, bottom: 0.1 },
     })
